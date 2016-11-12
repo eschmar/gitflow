@@ -7,18 +7,18 @@ The goal of this repository is to have a shareable reference point for working w
 Is this guide for you? Gitflow works well with mid-sized teams with multple deployment environments. There are reasons for not using any dev branch at all (in flat organisations), but it requires continuous live deployment, which is not always possible (when working for a customer, rather than on a product).
 
 ## Information
-This section is only important if you're evaluating this to share with your colleagues. If you were sent here, jump right to #getting-started.
+This section is only important if you're evaluating this to share with your colleagues. If you were sent here, [jump right to `Getting started`](#1-getting-started).
 
 ## 0. Table of contents
-1. [Gettings Started](/#getting-started)
+1. [Getting Started](#1-getting-started)
     * Git basics
     * Checklist
-2. [Gitflow](/#gitflow)
+2. [Gitflow](#2-gitflow)
     * Introduction
     * Branch types
     * Pull Requests
     * Forking
-3. [Cookbook](/#cookbook)
+3. [Cookbook](#3-cookbook)
     * Project setup
     * Hotfix
     * Feature/Bugfix
@@ -26,9 +26,9 @@ This section is only important if you're evaluating this to share with your coll
     * Rebase
     * Advanced rebasing
     * Clean up
-4. [Helpers](/#helpers)
+4. [Helpers](#4-helpers)
     * CLI alias
-5. [Recommended tools](#recommended-tools)
+5. [Recommended tools](#5-recommended-tools)
 
 ## 1. Getting started
 To really grasp the concepts behind git, it is critical to get to know the basic commands. That’s why this guide will be using the command line. If you want to later streamline the process with a GUI (see recommended Tools) that’s fine, however command line is and should be the default.
