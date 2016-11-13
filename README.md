@@ -1,8 +1,10 @@
 **This is a work in progress.**
 
-The goal of this repository is to have a shareable reference point for working with git, specifically using the gitflow workflow. Everything in this guide is heavily inspired and based on [nvie's original blog post](http://nvie.com/posts/a-successful-git-branching-model/). As he correctly realised, the easiest way to teaching git is using a "big picture" figure:
-
 ![Gitflow](gitflow-small.png)
+
+The goal of this repository is to have a shareable reference point for working with git, specifically using the gitflow branching model. Everything in this guide is heavily inspired and based on [nvie's original blog post](http://nvie.com/posts/a-successful-git-branching-model/). As he correctly realised, the easiest way to teaching git is using a "big picture" figure:
+
+[Gitflow Life Cycle PDF Version](gitflow.pdf)
 
 Is this guide for you? Gitflow works well in mid-sized teams with multple deployment environments. There are reasons for not using any dev branch at all (in flat organisations), but it requires continuous live deployment, which is not always possible (when working for a customer, rather than on a product).
 
@@ -31,7 +33,7 @@ This section is only important if you're evaluating this to share with your coll
 5. [Recommended tools](#5-recommended-tools)
 
 ## 1. Getting started
-To really grasp the concepts behind git, it is critical to get to know the basic commands. That’s why this guide will be using the command line. If you want to later streamline the process with a GUI (see recommended Tools) that’s fine, however command line is and should be the default.
+To really grasp the concepts behind git, it is critical to know the basic commands. That’s why this guide will be using the command line. If you want to streamline the process with a GUI later on (see recommended Tools) that’s fine, however command line is and should be the default.
 
 Please take your time to go through each chapter in this guide and **ask your peers** in case something is unclear!
 
@@ -58,7 +60,7 @@ Make sure you understand the following commands and concepts before continuing:
 * Git merge 
 * Staging Area
 
-Let's check if you have set your name and email address:
+Let's quickly check if you have set your name and email address:
 
 ```sh
 git config -l
