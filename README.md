@@ -50,12 +50,26 @@ Make sure you understand the following commands and concepts before continuing:
 * Git status
 * Git Add
 * Git reset
-* Git commit Git push
+* Git commit 
+* Git push
 * Git pull
 * Git branch 
 * Git checkout 
 * Git merge 
 * Staging Area
+
+Let's check if you have set your name and email address:
+
+```sh
+git config -l
+```
+
+If you don't see your name and email address, you should set them now:
+
+```sh
+git config --global user.name "John Doe"
+git config --global user.email "john.doe@acme.git"
+```
 
 ## 2. Gitflow
 ## 3. Cookbook
