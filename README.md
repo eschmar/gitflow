@@ -88,7 +88,7 @@ Everyone will communicate with the main branches through pull requests only. **N
 While `master` and `dev` are permanent branches, Gitflow also introduces supporting temporary branches:
 
 | Type | Description | Naming |
-| ------------- |-------------| -----|
+| :------------- | :------------- | :----- |
 | Hotfix | If you encounter a severe bug in the production environment that prevents proper functioning, the hotfix branch is the way to go. It is the only temporary branch originating from master and should only contain small fixes. Merge this branch in both dev and master after completion. | hotfix/<name> |
 | Feature | This is the most common branch type you will be using. Originating from dev, this branch contains one logically definite feature and will be merged back into dev. | feature/<name> |
 | Bugfix | Exactly the same as the Feature type. This is just a distinction for better readability later in the history of the repository. | bugfix/<name> |
