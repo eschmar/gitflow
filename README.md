@@ -15,6 +15,8 @@ This section is only important if you're evaluating this to share with your coll
 1. [Getting Started](#1-getting-started)
     * Git basics
     * Checklist
+    * Create a pull request
+    * Create a fork
 2. [Gitflow](#2-gitflow)
     * Branch types
     * Pull Requests
@@ -72,6 +74,9 @@ If you don't see your name and email address, you should set them now:
 git config --global user.name "John Doe"
 git config --global user.email "john.doe@acme.git"
 ```
+
+### Create a pull request
+### Create a fork
 
 ## 2. Gitflow
 One of the major strengths of Git is its flexibility, which is why there are many different established workflows out in the wild. In this guide, we're discussing the standard workflow for working with open source software (on Github), called Gitflow. It’s a branching model designed around project deployment.
