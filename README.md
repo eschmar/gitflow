@@ -120,9 +120,110 @@ In the subpages you’ll find the single steps explained in depth. It's a good i
 ## 3. Cookbook
 ### Project setup
 ### Hotfix
+The important points to remember are:
+* Hotfixes are small fixes for severe bugs in production
+* This is the only type of supporting branch, which should originate from master
+* Merge hotfix branches both into dev and master, as you don't want to lose your fix with the next release of dev
+* Create a new tag with a minor version bump ("v1.0.0" -> "v1.0.1") after merging the release
+
+```sh
+git checkout master
+git pull
+
+# create the new hotfix branch
+git checkout -b hotfix/<name>
+
+# make your changes
+git add <file>
+git commit -m "<message>"
+...
+
+# push the changes to your fork
+git push -u origin hotfix/<name>
+
+# create a pull request
+# PR origin/hotfix/<name> -> upstream/dev
+
+# create a new tag
+git checkout master
+git pull
+git tag -a v1.0.1
+git push upstream --tags
+```
+
 ### Feature/Bugfix
+The important points to remember are:
+* These are the most common branch types
+* The only difference between feature and bugfix is the wording. It is easier to read the git history if you're differentiating between new features and bugfixes.
+* Always create new bugfix/feature branches from dev
+
+```sh
+git checkout dev
+git pull
+
+# create the new branch
+git checkout -b feature/<name>
+
+# make your changes
+git add <file>
+git commit -m "<message>"
+...
+
+# push the changes to your fork
+git push -u origin feature/<name>
+
+#
+# It's good practice to rebase your feature or bugfix branch before
+# creating pull requests. See chapter "Rebase".
+#
+
+# go to stash and create the pull request from your fork
+# PR origin/feature/<name> -> upstream/dev
+```
+
 ### Release
+The important points to remember are:
+* Release branches are only necessary with multiple team members
+* The release branch is created from dev and usually means feature freeze for the imminent version to be released
+* Other team members may continue working on the dev branch, however there should only be bugfixes on the release branch from this point on
+* These bugfixes may be continuously merged back to dev, if necessary
+* Merge the branch to both dev and master
+* Create a new tag after merging the release
+
+```sh
+git checkout dev
+git pull
+
+# create the new branch with the version number (e.g. "v1.0.0") and directly push it 
+git checkout -b release/<version>
+git push -u origin release/<version>
+
+#
+# at this point, the release branch should be deployed to a staging environment and thoroughly tested!
+#
+
+# if necessary, make your bug fixes 
+git add <file>
+git commit -m "<message>"
+... 
+git push
+
+# go to stash and create the pull requests
+# PR upstream/release/<version> -> upstream/master
+# PR upstream/master -> upstream/dev
+```
+
 ### Rebase
+Before merging your feature- or bugfix branch back into `upstream/dev`, you should rebase your branch. Other team members may have already merged their work back into `dev` and we want to avoid merge conflicts. The basic idea of rebasing is to:
+
+1. update the base branch to the latest state
+2. reapply your commits one by another on top
+3. merge conflicts on a single commit base in the process
+
+Following graphic illustrates this process. Orange commits may be new features from your teammates. After the rebase, your feature branch will appear as it was created after the orange commits.
+
+Now that your branch originates from the latest commit, your branch is ready for the pull request.
+
 ### Advanced rebasing
 ### Clean up
 Yes, clean up. This makes it not only easier for you, but also for your colleagues who may be reviewing your code or have to check something in your repository. This includes:
