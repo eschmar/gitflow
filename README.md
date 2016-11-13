@@ -43,7 +43,7 @@ Because there’s already comprehensive documentation on Git basics available on
 * [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 * [Got 15 minutes and want to learn Git?](https://try.github.io)
 
-Now you should have a basic understanding of how to use git.
+Now you should have a basic understanding on how to use git.
 
 ### Checklist
 Make sure you understand the following commands and concepts before continuing:
@@ -74,8 +74,23 @@ git config --global user.email "john.doe@acme.git"
 ```
 
 ## 2. Gitflow
+### Introduction
+### Branch types
+### Pull Requests
+### Forking
+
 ## 3. Cookbook
+### Project setup
+### Hotfix
+### Feature/Bugfix
+### Release
+### Rebase
+### Advanced rebasing
+### Clean up
+
 ## 4. Helpers
+### CLI alias
+
 ## 5. Recommended tools
 
 ## Todo
