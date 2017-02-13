@@ -17,16 +17,16 @@ Please take your time to go through each chapter in this guide and **ask your pe
 
 ## Table of contents
 1. [Getting Started](1-getting-started/)
-    * Branch types
-    * Pull Requests
-    * Forking
+    * [Branch types](1-getting-started/#branch-types)
+    * [Pull Requests](1-getting-started/#pull-requests)
+    * [Forking](1-getting-started/#forking)
 2. [The Big Picture](2-the-big-picture/)
-    * Project setup
-    * Hotfix
-    * Feature/Bugfix
-    * Release
-    * Rebase
-    * Clean up
+    * [Project setup](2-the-big-picture/#project-setup)
+    * [Hotfix](2-the-big-picture/#hotfix)
+    * [Feature/Bugfix](2-the-big-picture/#featurebugfix)
+    * [Release](2-the-big-picture/#release)
+    * [Rebase](2-the-big-picture/#rebase)
+    * [Clean up](2-the-big-picture/#clean-up)
 3. [Nuggets](3-nuggets/)
     * Advanced rebasing
     * Undo commits
