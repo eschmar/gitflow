@@ -26,17 +26,18 @@ Please take your time to go through each chapter in this guide and **ask your pe
     * Feature/Bugfix
     * Release
     * Rebase
-    * Advanced rebasing
     * Clean up
 3. [Nuggets](#3-nuggets)
-    * CLI alias
+    * Advanced rebasing
+    * Undo commits
+    * CLI aliases
 4. [Recommended tools](#4-recommended-tools)
 
 ---
 
 ## 1. Getting Started
 
-//todo: Hereafter we describe the tools involved to make gitflow work.
+This workflow heavily relies on branches and working with them. Hence we first introduce the tools involved to make Gitflow work.
 
 ### Branch Types
 
@@ -101,7 +102,12 @@ The previous chapter was intentionally held short, because by experience it’s 
 
 
 ## 3. Nuggets
-// todo
+
+In this chapter you'll find a collection of concrete and compact recepies to complement the rather general descriptions of the previous chapters. The individual topics will be described in their own linked subpages.
+
+* Advanced rebasing
+* Undo commits
+* CLI aliases
 
 
 
