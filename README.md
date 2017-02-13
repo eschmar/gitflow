@@ -16,18 +16,18 @@ Since there is already comprehensive documentation on Git basics available on th
 Please take your time to go through each chapter in this guide and **ask your peers** in case something is unclear! It's advicable to have a printed version of the PDF at hand.
 
 ## Table of contents
-1. [Getting Started](#1-getting-started)
+1. [Getting Started](1-getting-started/)
     * Branch types
     * Pull Requests
     * Forking
-2. [The Big Picture](#2-the-big-picture)
+2. [The Big Picture](2-the-big-picture/)
     * Project setup
     * Hotfix
     * Feature/Bugfix
     * Release
     * Rebase
     * Clean up
-3. [Nuggets](#3-nuggets)
+3. [Nuggets](3-nuggets/)
     * Advanced rebasing
     * Undo commits
     * CLI aliases
