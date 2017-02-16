@@ -2,6 +2,16 @@
 
 The previous chapter was intentionally held short, because by experience it’s easiest to explain Git using flowcharts. This chapter introduces the "big picture", a flowchart picturing the life cycle of a project repository in Gitflow. Each of the steps will be explained in their own subchapter.
 
+* [Project Setup](#project-setup)
+* [Hotfix](#hotfix)
+* [Feature/Bugfix](#featurebugfix)
+* [Release](#release)
+* [Rebase](#rebase)
+* [Clean Up](#clean-up)
+
+### Project Setup
+
+// todo
 
 ### Hotfix
 
