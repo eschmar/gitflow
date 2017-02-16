@@ -70,7 +70,7 @@ git commit -m "<message>"
 git push -u origin hotfix/<name>
 
 # create a pull request
-# PR origin/hotfix/<name> -> upstream/dev
+# Pull Request: origin/hotfix/<name> -> upstream/dev
 
 # create a new tag on master
 git checkout master
@@ -78,6 +78,8 @@ git fetch upstream
 git rebase upstream/master
 git tag -a v1.0.1
 git push upstream --tags
+
+# Delete the hotfix branch.
 ```
 
 
@@ -90,11 +92,13 @@ Originates from | Will be merged into
 Important points to remember:
 * The most common branch types you will be using.
 * Difference between feature and bugfix is only the wording for better readability.
-* Never merge these branches directly into `master`!
+* **Never** merge these branches directly into `master`!
 
 ```sh
 git checkout dev
 git pull
+git fetch upstream
+git rebase upstream/dev
 
 # create the new branch
 git checkout -b feature/<name>
@@ -112,8 +116,8 @@ git push -u origin feature/<name>
 # creating pull requests. See chapter "Rebase".
 #
 
-# go to stash and create the pull request from your fork
-# PR origin/feature/<name> -> upstream/dev
+# Pull Request: origin/feature/<name> -> upstream/dev
+# Delete the feature/bugfix branch.
 ```
 
 
@@ -132,10 +136,13 @@ Important points to remember:
 ```sh
 git checkout dev
 git pull
+git fetch upstream
+git rebase upstream/dev
 
-# create the new branch with the version number (e.g. "v1.0.0") and directly push it 
+# create the new branch with the version number (e.g. "v1.0.0")
+# and directly push it to the main repository
 git checkout -b release/<version>
-git push -u origin release/<version>
+git push -u upstream release/<version>
 
 #
 # at this point, the release branch should be deployed to a staging environment and thoroughly tested!
@@ -147,9 +154,10 @@ git commit -m "<message>"
 ... 
 git push
 
-# go to stash and create the pull requests
-# PR upstream/release/<version> -> upstream/master
-# PR upstream/master -> upstream/dev
+# Pull Request: upstream/release/<version> -> upstream/master
+# Pull Request: upstream/master -> upstream/dev
+
+# Delete the release branch.
 ```
 
 
