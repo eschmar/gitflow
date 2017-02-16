@@ -31,3 +31,8 @@ Please take your time and **ask your peers** in case something is unclear! It's 
     * Advanced rebasing
     * `git reset` - Undo commits
     * CLI aliases
+
+
+---
+
+## Start here: [Getting Started](1-getting-started/)

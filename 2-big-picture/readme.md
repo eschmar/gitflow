@@ -239,7 +239,7 @@ git merge conflict/b
 ```
 
 #### `git mergetool`
-In the example above, we've used the command `git mergetool`. This will open your defined tool to handle merge conflicts. There are various tools out there - choose the one that best fits you.
+In the example above, we've used the command `git mergetool`. This will open your defined tool to handle merge conflicts. There are various tools out there - choose the one that best fits you. Look out for three-way merging functionality.
 
 
 ### Clean up
@@ -264,3 +264,8 @@ git branch -a
 
 See [CLI Aliases](../3-nuggets/cli-aliases.md) for shortening these steps.
 
+
+
+---
+
+## Next up: [Nuggets](../3-nuggets)

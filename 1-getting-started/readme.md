@@ -37,7 +37,7 @@ Everyone will communicate with the main branches through pull requests only.
 All development happens on these branches. The shorter the lifespan of said branches, the easier it will be to merge them later. After a successful merge, supporting branches are usually deleted (thus temporary).
 
 
-### Pull Request
+### Pull Requests
 
 When we’re talking about merging one branch into another, a pull request is always involved. In later graphics, an arrow directed to the right side represents a pull request. Or in other words, this is our tool for getting code from one branch to another.
 
@@ -56,3 +56,8 @@ This minimizes any danger of breaking something in the main repository, as you c
 So additionally to the main project repository, every involved employee will have his own fork. Make sure that your peers have at least read access to your fork.
 
 [Fork a repo on Github](https://help.github.com/articles/fork-a-repo/)
+
+
+---
+
+## Next up: [The big picture](../2-big-picture)
