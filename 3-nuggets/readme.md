@@ -4,4 +4,4 @@ In this chapter you'll find a collection of concrete and compact recepies to com
 
 * Git reset
 * Advanced rebasing
-* CLI aliases
+* Useful commands
