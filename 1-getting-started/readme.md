@@ -27,7 +27,7 @@ Everyone will communicate with the main branches through pull requests only.
 
 #### Supporting branch types
 
-| Type | Description | Naming |
+| Type | Description | Prefix |
 | :------------- | :------------- | :----- |
 | Hotfix | This is the only temporary branch originating from `master` and should only be used for severe bugfixes that prevent production from running properly. | hotfix/<name> |
 | Feature | The most common branch type you will be using for adding new features to your project. | feature/<name> |
@@ -65,4 +65,4 @@ So additionally to the main project repository, every involved employee will hav
 
 ---
 
-## Next up: [The big picture](../2-big-picture)
+--> Next up: [The big picture](../2-big-picture)

@@ -268,4 +268,4 @@ See [CLI Aliases](../3-nuggets/cli-aliases.md) for shortening these steps.
 
 ---
 
-## Next up: [Nuggets](../3-nuggets)
+--> Next up: [Nuggets](../3-nuggets)

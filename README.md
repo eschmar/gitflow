@@ -28,11 +28,10 @@ Please take your time and **ask your peers** in case something is unclear! It's 
     * [Rebase](2-the-big-picture/#rebase)
     * [Clean up](2-the-big-picture/#clean-up)
 3. [Nuggets](3-nuggets/)
-    * Advanced rebasing
-    * `git reset` - Undo commits
-    * CLI aliases
-
+    * [git reset](3-nuggets/git-reset.md)
+    * [Advanced rebasing](3-nuggets/advanced-rebasing.md)
+    * [Useful commands](3-nuggets/useful-commands.md)
 
 ---
 
-## Start here: [Getting Started](1-getting-started/)
+--> Start here: [Getting Started](1-getting-started/)
