@@ -162,7 +162,84 @@ git push
 
 
 ### Rebase
-// todo
+
+Before we start: This is one of the trickiest steps in the begining. Please take your time and don't be shy - **ask your peers** in case something is unclear!
+
+Before merging your feature- or bugfix branch back into `upstream/dev`, it's good practise to rebase your branch. Other team members may have already merged their work back into `dev` and we want to avoid merge conflicts. The basic idea of a rebase is:
+
+* Revert your branch to the original state when you created it from `dev`.
+* Update to the current state of `dev`.
+* Re-apply your commits one by one on top of the up to date branch.
+
+And all of this fully automatically - with the magic of git. So in the end it will seem, as if you started working from the latest state of the `dev` branch.
+
+Does this sound too good to be true? Yes it is. Along the way, git merge conflicts may arrise - and that's what causes the most problems for newcommers.
+
+Example, assuming you're on the master branch:
+
+```
+# Create a test file
+printf "a\nb\nc\nd" > test.md
+git add test.md
+git commit -m "Add test file"
+
+# Let's assume we have two colleagues A and B
+git checkout -b conflict/a
+
+# 1. Edit the letter 'd' into 'e' and commit
+# 2. Edit the letter 'a' into 'f' and commit
+
+git checkout master 
+git checkout -b conflict/b
+
+# 1. Edit the letter 'd' into 'x' and commit
+git checkout master
+
+# Now A is done with his work and merges first back into master
+git merge conflict/a
+
+# When B tries to merge back, there should be a merge conflict,
+# since the letter 'd' was changed into 'e' and git doesn't know
+# if it should keep 'e' or the new 'x':
+git merge conflict/b
+
+#
+# Auto-merging test.md
+# CONFLICT (content): Merge conflict in test.md
+# Automatic merge failed; fix conflicts and then commit the result.
+#
+# This is what we want to avoid! Let's take a step back. The person
+# merging the changes, is probably the maintainer of the repository.
+# It may not be obvious what you were trying to change and it would
+# require a lot of time to figure this out. So most likely he will
+# just deny the changes. That's why the creator of the change
+# should rebase.
+#
+git merge --abort
+
+git checkout conflict/b
+git rebase master
+
+# Now first the commits from `conflict/a` will be applied and
+# a merge conflict arrises when the commits from `conflicts/b`
+# are re applied. The difference is, no _I_, the creator, am
+# dealing with the merge conflict, instead of the maintainer.
+git mergetool
+git rebase --continue
+
+# When solving the merge conflict, backup files ending in *.orig
+# may have been created. Let's remove that file with a clean:
+git clean -f
+
+# Retry to merge `conflict/b`
+git checkout master
+git merge conflict/b
+
+# Nice!
+```
+
+#### `git mergetool`
+In the example above, we've used the command `git mergetool`. This will open your defined tool to handle merge conflicts. There are various tools out there - choose the one that best fits you.
 
 
 ### Clean up
@@ -179,8 +256,10 @@ git branch -D feature/delete
 # delete a remote branch
 git push origin :feature/delete
 
-# clean up local branch references git branch -a
-git branch remote prune origin git branch -a
+# clean up local branch references
+git branch -a
+git branch remote prune origin
+git branch -a
 ```
 
 See [CLI Aliases](../3-nuggets/cli-aliases.md) for shortening these steps.
