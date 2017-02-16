@@ -30,6 +30,17 @@ Initially, your repository will only contain a `master` branch. Create a `dev` b
 
 Next step is protecting both the `master` and `dev` branch from being pushed to directly. As stated earlier, all your changes should go through a proper branch and pull request. This makes sure that no direct pushes happen accidentally and that no `push --force` is possible.
 
+Et voilà. Your repository is ready to be forked. The following sections assume that you are working on your own fork and two remotes configured:
+
+* `origin`: Your own fork.
+* `upstream`: The main repository.
+
+How to add `upstream` to your remotes:
+
+```sh
+git remote add upstream <repository>
+```
+
 ### Hotfix
 
 Originates from | Will be merged into
@@ -42,8 +53,10 @@ Important points to remember:
 * Create a new tag with a minor version bump ("v1.0.0" -> "v1.0.1") after merging.
 
 ```sh
+# make sure your master branch is up to date
 git checkout master
-git pull
+git fetch upstream
+git rebase upstream/master
 
 # create the new hotfix branch
 git checkout -b hotfix/<name>
@@ -59,9 +72,10 @@ git push -u origin hotfix/<name>
 # create a pull request
 # PR origin/hotfix/<name> -> upstream/dev
 
-# create a new tag
+# create a new tag on master
 git checkout master
-git pull
+git fetch upstream
+git rebase upstream/master
 git tag -a v1.0.1
 git push upstream --tags
 ```
