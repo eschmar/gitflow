@@ -5,3 +5,5 @@ In this chapter you'll find a collection of concrete and compact recipes to comp
 * [Git reset](git-reset.md)
 * [Advanced rebasing](advanced-rebasing.md)
 * [Useful commands](useful-commands.md)
+
+More to come.

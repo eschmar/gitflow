@@ -30,7 +30,7 @@ It's advisable to have a printed version of the PDF at hand.
     * [Rebase](2-the-big-picture/#rebase)
     * [Clean up](2-the-big-picture/#clean-up)
 3. [Nuggets](3-nuggets/)
-    * [git reset](3-nuggets/git-reset.md)
+    * [Git reset](3-nuggets/git-reset.md)
     * [Advanced rebasing](3-nuggets/advanced-rebasing.md)
     * [Useful commands](3-nuggets/useful-commands.md)
 
