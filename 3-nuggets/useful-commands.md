@@ -1,10 +1,10 @@
-[<-- Back to Nuggets](readme.md)
+[< Back to Nuggets](readme.md)
 
 ---
 
 # Useful commands
 
-Collection of useful commands:
+Collection of commands, possibly usable in cli aliases:
 
 ```sh
 # add only parts of your changes with the --patch option
