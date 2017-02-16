@@ -177,7 +177,7 @@ Does this sound too good to be true? Yes it is. Along the way, git merge conflic
 
 Example, assuming you're on the master branch:
 
-```
+```sh
 # Create a test file
 printf "a\nb\nc\nd" > test.md
 git add test.md
