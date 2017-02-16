@@ -22,21 +22,19 @@ Usually there are only two permanent branches:
 
 Everyone will communicate with the main branches through pull requests only. 
 
-```diff
-- **No direct pushes to main branches should ever happen.**
-```
+> **No direct pushes to main branches should ever happen.**
 
 
 #### Supporting branch types
 
 | Type | Description | Naming |
 | :------------- | :------------- | :----- |
-| Hotfix | This is the only temporary branch originating from `master` and should only be used for severe bugfixes that prevent production from running properly. Merge this branch in both `dev` and `master` after completion. | hotfix/<name> |
-| Feature | The most common branch type you will be using. Originating from `dev`, this branch contains one logically definite feature and will be merged back into `dev`. | feature/<name> |
+| Hotfix | This is the only temporary branch originating from `master` and should only be used for severe bugfixes that prevent production from running properly. | hotfix/<name> |
+| Feature | The most common branch type you will be using for adding new features to your project. | feature/<name> |
 | Bugfix | Exactly the same as the Feature type. This is just a distinction in name for better readability. | bugfix/<name> |
-| Release | This branch is used when the development on the `dev` branch continues, but the features for a new milestone have been frozen. Only bugfixes should be added to this branch after creation and it should be first merged into `master` and then `dev` upon release. | release/<name> |
+| Release | This branch is used when the development on the `dev` branch continues, but the features for a new milestone have been frozen. Only bugfixes should be added to this branch after creation. | release/<name> |
 
-All development happens on these branches. The shorter the lifespan of said branches, the easier it will be to merge them later. After a successful merge, supporting branches are normally deleted (thus temporary).
+All development happens on these branches. The shorter the lifespan of said branches, the easier it will be to merge them later. After a successful merge, supporting branches are usually deleted (thus temporary).
 
 
 ### Pull Request
@@ -45,9 +43,16 @@ When we’re talking about merging one branch into another, a pull request is al
 
 Pull requests are a feature of Git itself, however the “vanilla” way of creating a pull request would be copying a diff between your branch and the one you want to merge into, and then sending this diff via Email to the repository maintainer. Fortunately, services like Github simplify this process significantly by providing a GUI.
 
+Since this process is different depending on the service you are using, I'm simply linking here to the tutorial for Github:
+
+[Creating a pull request](https://help.github.com/articles/creating-a-pull-request/)
 
 ### Forking
 
-A fork is a complete copy of a repository. This is widely used in open source: The code base is publicly available on for example Github, but you won’t be able to directly push changes into the repository, as you’re not the maintainer and therefor don’t have the privileges to do so. By creating your own fork, you can freely experiment without affecting the original project. The maintainer then has the responsibility to decide, which changes will flow into his repository and which won’t. In other words, he accepts or declines pull requests originating from forks.
+A fork is a complete copy of a repository. This is widely used in open source: The code base is publicly available, but you won’t be able to directly push changes into the repository, as you’re not the maintainer and therefor don’t have the privileges to do so. By creating your own fork, you can freely experiment without affecting the original project. The maintainer then has the responsibility to decide, which changes will flow into his repository and which won’t. In other words, he accepts or declines pull requests originating from forks.
+
+This minimizes any danger of breaking something in the main repository, as you can `push --force` as much as you want in your own fork. It won't have any consequences and can be easily restored.
 
 So additionally to the main project repository, every involved employee will have his own fork. Make sure that your peers have at least read access to your fork.
+
+[Fork a repo on Github](https://help.github.com/articles/fork-a-repo/)
