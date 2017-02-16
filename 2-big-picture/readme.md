@@ -163,19 +163,19 @@ git push
 
 ### Rebase
 
-Before we start: This is one of the trickiest steps in the begining. Please take your time and don't be shy - **ask your peers** in case something is unclear!
+Before we start: This is one of the trickiest steps in the beginning. Please take your time and don't be shy - **ask your peers** in case something is unclear!
 
 Before merging your feature- or bugfix branch back into `upstream/dev`, it's good practise to rebase your branch. Other team members may have already merged their work back into `dev` and we want to avoid merge conflicts. The basic idea of a rebase is:
 
 * Revert your branch to the original state when you created it from `dev`.
 * Update to the current state of `dev`.
-* Re-apply your commits one by one on top of the up to date branch.
+* Re-apply your commits one by one on top of the updated `dev` branch.
 
 And all of this fully automatically - with the magic of git. So in the end it will seem, as if you started working from the latest state of the `dev` branch.
 
-Does this sound too good to be true? Yes it is. Along the way, git merge conflicts may arrise - and that's what causes the most problems for newcommers.
+Does this sound too good to be true? Yes it is. Along the way, git merge conflicts may arise - and that's what causes the most problems for beginners.
 
-Example, assuming you're on the master branch:
+Let's tackle this with an example, assuming you're on the master branch:
 
 ```sh
 # Create a test file
@@ -221,8 +221,8 @@ git checkout conflict/b
 git rebase master
 
 # Now first the commits from `conflict/a` will be applied and
-# a merge conflict arrises when the commits from `conflicts/b`
-# are re applied. The difference is, no _I_, the creator, am
+# a merge conflict arises when the commits from `conflicts/b`
+# are re applied. The difference is, that now the creator is
 # dealing with the merge conflict, instead of the maintainer.
 git mergetool
 git rebase --continue
@@ -262,10 +262,7 @@ git branch remote prune origin
 git branch -a
 ```
 
-See [CLI Aliases](../3-nuggets/cli-aliases.md) for shortening these steps.
-
-
 
 ---
 
---> Next up: [Nuggets](../3-nuggets)
+Next up: [Nuggets](../3-nuggets)
