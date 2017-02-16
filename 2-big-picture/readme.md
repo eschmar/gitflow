@@ -11,7 +11,24 @@ The previous chapter was intentionally held short, because by experience it’s 
 
 ### Project Setup
 
-// todo
+#### Project Files
+
+Project setup will be done once and ideally is a standardised process, maybe even using a boilerplate project as a base. So let's have a look at what belongs into a repository before the actual work on the project beings:
+
+* **readme.md**: Describe your project.
+* **.gitignore**: Use a service like [gitignore.io](http://gitignore.io) and adjust to your needs, such that no unnecessary land in your repository.
+* **.gitattributes**: Define how to treat which files and set up [Git Large File Storage](https://git-lfs.github.com/).
+* **.editorconfig**: Tabs or spaces? Either way, standardise hits among your team with the [editorconfig file](http://editorconfig.org/).
+* **Build files**: Build configuration files depending on the services you are using.
+
+This list is of course not complete and not mandatory. Make sure you find a sensible standard for your team and improve it along the way. 
+
+
+#### Project Configuration
+
+Initially, your repository will only contain a `master` branch. Create a `dev` branch originating from `master` and set it as the default branch. This makes sure that the `dev` branch is the default target branch in pull requests.
+
+Next step is protecting both the `master` and `dev` branch from being pushed to directly. As stated earlier, all your changes should go through a proper branch and pull request. This makes sure that no direct pushes happen accidentally and that no `push --force` is possible.
 
 ### Hotfix
 
