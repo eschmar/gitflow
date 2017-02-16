@@ -43,4 +43,4 @@ git commit --amend -m "<new-message>"
 ```
 
 ## Beyond `reset`
-If you want to go more aggressive and rewrite the history, check out `rebase`.
+If you want to go more aggressive and rewrite the history, check out [Advanced rebasing](advanced-rebasing.md).
