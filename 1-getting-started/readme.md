@@ -36,6 +36,11 @@ Everyone will communicate with the main branches through pull requests only.
 
 All development happens on these branches. The shorter the lifespan of said branches, the easier it will be to merge them later. After a successful merge, supporting branches are usually deleted (thus temporary).
 
+#### Naming conventions
+
+All branch names should be lowercase with dashes. Examples:
+* `feature/shop-basket`
+* `bugfix/shop-basket-double-entries`
 
 ### Pull Requests
 

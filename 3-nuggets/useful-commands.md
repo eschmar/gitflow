@@ -7,6 +7,10 @@
 Collection of useful commands:
 
 ```sh
+# add only parts of your changes with the --patch option
+git add --patch
+git add -p
+
 # files changed in the last 5 commits
 git log --name-status --pretty=oneline -n 5
 
