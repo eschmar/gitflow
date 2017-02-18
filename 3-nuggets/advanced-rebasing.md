@@ -35,8 +35,10 @@ What we're going to do:
 * Move the "Move to top" commit, so it seems like it was the first commit.
 * Split the commit "Split" into two commits "Split A" and "Split B"
 * Fix the commit message from "Rename me" to "Renamed"
- 
+
+
 The resulting commits order should be:
+
 
 1. Move to top
 2. Squashed
