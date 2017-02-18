@@ -19,12 +19,15 @@ So hold your breath, we'll do all of these in one rebase!
 
 I have prepared a fresh git repository with a single file `readme.md` and then created the following 6 commits in chronological order:
 
-1. Squash A
-2. Squash B
-3. Squash C
-4. Move to top
-5. Split
-6. Rename me
+```sh
+* 1d3cc9b (HEAD -> master) Rename me
+* dd08da4 Split
+* e9aa849 Move to top
+* dc3d9b2 Squash C
+* d229beb Squash B
+* 72c093e Squash A
+* f75bd60 Initial commit
+```
 
 
 #### Battle plan
