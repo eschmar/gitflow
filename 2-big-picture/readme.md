@@ -176,7 +176,7 @@ Before merging your feature- or bugfix branch back into `upstream/dev`, it's goo
 * Re-apply your commits one by one on top of the updated `dev` branch.
 
 <p align="center">
-    <img src="https://github.com/eschmar/gitflow/raw/master/img/rebase.png" alt="Git Rebase">
+    <img width="380" src="https://github.com/eschmar/gitflow/raw/master/img/rebase.png" alt="Git Rebase">
 </p>
 
 And all of this fully automatically - with the magic of git. So in the end it will seem, as if you started working from the latest state of the `dev` branch.
