@@ -175,6 +175,10 @@ Before merging your feature- or bugfix branch back into `upstream/dev`, it's goo
 * Update to the current state of `dev`.
 * Re-apply your commits one by one on top of the updated `dev` branch.
 
+<p align="center">
+    <img src="https://github.com/eschmar/gitflow/raw/master/img/rebase.png" alt="Git Rebase">
+</p>
+
 And all of this fully automatically - with the magic of git. So in the end it will seem, as if you started working from the latest state of the `dev` branch.
 
 Does this sound too good to be true? Yes it is. Along the way, git merge conflicts may arise - and that's what causes the most problems for beginners.
