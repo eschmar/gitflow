@@ -8,7 +8,7 @@ This chapter introduces the tools necessary for gitflow to work. The workflow ai
 
 ### Branch Types
 
-Gitflow differentiates between *permanent* and *supporting branch types*. As a general rule, branches should have a short lifespan and be deleted after being merged. However, permanent branches will theoretically live forever and represent a specific project state. The obvious example is the `master` branch, whose state should always be equal to the production environment. When code is merged into a permanent branch, ideally continuous integration kicks in and deploys the new state right away. We want to achieve confidence in the state of our project and avoid deploys on Friday nights of several hundred commits difference.
+Gitflow differentiates between *permanent* and *supporting* branch types. As a general rule, branches should have a short lifespan and be deleted after being merged. However, permanent branches will theoretically live forever and represent a specific project state. The obvious example is the `master` branch, whose state should always be equal to the production environment. When code is merged into a permanent branch, ideally continuous integration kicks in and deploys the new state right away. We want to achieve confidence in the state of our project and avoid deploys on Friday nights of several hundred commits difference.
 
 Following you'll find a list of the individual branch types and naming conventions. Of course this is not set in stone and you may adjust it by adding ticket numbers of your project management tool or similar.
 
@@ -20,9 +20,7 @@ Usually there are only two permanent branches:
 * **Master**. This is the first branch of every Git repository and should always represent the current state on the live server (production). 
 * **Dev**. Originating from the master branch, this is the place where development happens. Consequently this branch should represent the current state on a testing server.
 
-Everyone will communicate with the main branches through pull requests only. 
-
-> **No direct pushes to main branches should ever happen.**
+> **Everyone will communicate with the main branches through pull requests only. No direct pushes to main branches should ever happen.**
 
 
 #### Supporting branch types
@@ -59,6 +57,8 @@ A fork is a complete copy of a repository. This is widely used in open source: T
 This minimizes any danger of breaking something in the main repository, as you can `push --force` as much as you want in your own fork. It won't have any consequences and can be easily restored.
 
 So additionally to the main project repository, every involved employee will have his own fork. Make sure that your peers have at least read access to your fork.
+
+> **However, never code against your fork's permanent branches, as well! Otherwise, your fork won't be easily updated to the latest changes from the main repository.**
 
 [Fork a repo on Github](https://help.github.com/articles/fork-a-repo/)
 

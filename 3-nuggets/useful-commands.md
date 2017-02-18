@@ -32,15 +32,6 @@ git merge branch -X ours/theirs
 # if the file was deleted
 git log -- <file path>
 
-# checkout branch of a fork
-# http://stackoverflow.com/a/5884825/4401817
-git remote add coworker git://path/to/coworkers/repo.git
-git fetch coworker
-git checkout --track coworker/foo
-
-git checkout foo
-git pull
-
 # diff
 git difftool development..feature/<name>
 

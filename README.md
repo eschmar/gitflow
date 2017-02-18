@@ -15,7 +15,7 @@ Since there is already comprehensive documentation on Git basics available on th
 
 Please take your time and **ask your peers** in case something is unclear! 
 
-It's advisable to have a printed version of the PDF at hand.
+It's advisable to have a printed version of the PDF at hand and trying the commands on a testing repository.
 
 ## Table of contents
 1. [Getting Started](1-getting-started/)
@@ -32,6 +32,7 @@ It's advisable to have a printed version of the PDF at hand.
 3. [Nuggets](3-nuggets/)
     * [Git reset](3-nuggets/git-reset.md)
     * [Advanced rebasing](3-nuggets/advanced-rebasing.md)
+    * [Checkout Pull Requests](3-nuggets/checkout-pull-request.md)
     * [Useful commands](3-nuggets/useful-commands.md)
 
 ---
