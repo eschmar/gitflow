@@ -4,6 +4,8 @@ The previous chapter was intentionally held short, because by experience it’s 
 
 [The big picture (PDF Version)](https://github.com/eschmar/gitflow/blob/master/gitflow.pdf)
 
+When looking at the big picture, **it's imporant to consider direction**. An arrow to the left represents a new branch, whereas an arrow to the right is a pull request. **This means that you will only merge in one direction** (to the right).
+
 * [Project Setup](#project-setup)
 * [Hotfix](#hotfix)
 * [Feature/Bugfix](#featurebugfix)
@@ -18,9 +20,9 @@ The previous chapter was intentionally held short, because by experience it’s 
 Project setup will be done once and ideally is a standardised process, maybe even using a boilerplate project as a base. So let's have a look at what belongs into a repository before the actual work on the project beings:
 
 * **readme.md**: Describe your project.
-* **.gitignore**: Use a service like [gitignore.io](http://gitignore.io) and adjust to your needs, such that no unnecessary land in your repository.
+* **.gitignore**: Use a service like [gitignore.io](http://gitignore.io) and adjust to your needs, such that no unnecessary files land in your repository.
 * **.gitattributes**: Define how to treat which files and set up [Git Large File Storage](https://git-lfs.github.com/).
-* **.editorconfig**: Tabs or spaces? Either way, standardise hits among your team with the [editorconfig file](http://editorconfig.org/).
+* **.editorconfig**: Tabs or spaces? Either way, standardise hits among your team with the [editorconfig file](http://editorconfig.org/) (Use spaces, though).
 * **Build files**: Build configuration files depending on the services you are using.
 
 This list is of course not complete and not mandatory. Make sure you find a sensible standard for your team and improve it along the way. 
@@ -32,7 +34,7 @@ Initially, your repository will only contain a `master` branch. Create a `dev` b
 
 Next step is protecting both the `master` and `dev` branch from being pushed to directly. As stated earlier, all your changes should go through a proper branch and pull request. This makes sure that no direct pushes happen accidentally and that no `push --force` is possible.
 
-Et voilà. Your repository is ready to be forked. The following sections assume that you are working on your own fork and two remotes configured:
+Et voilà. Your repository is ready to be forked. The following sections assume that you are working on your own fork and have two remotes already configured:
 
 * `origin`: Your own fork.
 * `upstream`: The main repository.
