@@ -22,7 +22,7 @@ Project setup will be done once and ideally is a standardised process, maybe eve
 * **readme.md**: Describe your project.
 * **.gitignore**: Use a service like [gitignore.io](http://gitignore.io) and adjust to your needs, such that no unnecessary files land in your repository.
 * **.gitattributes**: Define how to treat which files and set up [Git Large File Storage](https://git-lfs.github.com/).
-* **.editorconfig**: Tabs or spaces? Either way, standardise hits among your team with the [editorconfig file](http://editorconfig.org/) (Use spaces, though).
+* **.editorconfig**: Tabs or spaces? Either way, standardise this across team with [editorconfig](http://editorconfig.org/) (Use spaces, though).
 * **Build files**: Build configuration files depending on the services you are using.
 
 This list is of course not complete and not mandatory. Make sure you find a sensible standard for your team and improve it along the way. 
