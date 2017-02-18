@@ -212,13 +212,12 @@ git merge conflict/b
 # CONFLICT (content): Merge conflict in test.md
 # Automatic merge failed; fix conflicts and then commit the result.
 #
-# This is what we want to avoid! Let's take a step back. The person
-# merging the changes, is probably the maintainer of the repository.
-# It may not be obvious what you were trying to change and it would
-# require a lot of time to figure this out. So most likely he will
-# just deny the changes. That's why the creator of the change
-# should rebase.
-#
+```
+
+This is what we want to avoid! Let's take a step back. The person merging the changes, is probably the maintainer of the repository. It may not be obvious what you were trying to change and it would require a lot of time to figure this out. So most likely he will just deny the changes. That's why the **creator of the change should rebase**.
+
+```sh
+# undo the merge
 git merge --abort
 
 git checkout conflict/b
