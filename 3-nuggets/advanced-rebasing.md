@@ -37,16 +37,6 @@ What we're going to do:
 * Fix the commit message from "Rename me" to "Renamed"
 
 
-The resulting commits order should be:
-
-
-1. Move to top
-2. Squashed
-3. Split A
-4. Split B
-5. Renamed
-
-
 #### Let's go
 
 [![asciicast](https://asciinema.org/a/e0frfdhgq25s3joztmk6pzmix.png)](https://asciinema.org/a/e0frfdhgq25s3joztmk6pzmix)
