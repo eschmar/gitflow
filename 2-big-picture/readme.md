@@ -246,7 +246,7 @@ git merge conflict/b
 ```
 
 #### `git mergetool`
-In the example above, we've used the command `git mergetool`. This will open your defined tool to handle merge conflicts. There are various tools out there - choose the one that best fits you. Look out for three-way merging functionality.
+In the example above, we've used the command `git mergetool`. This will open your defined tool to handle merge conflicts. There are various tools out there - choose the one that best fits you. Look out for three-way merging functionality. I personally use [Kaleidoscope](https://www.kaleidoscopeapp.com/).
 
 
 ### Clean up

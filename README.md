@@ -1,5 +1,3 @@
-**This is a work in progress.**
-
 The goal of this repository is to have a shareable reference point for working with git, specifically using the gitflow branching model. Everything in this guide is heavily inspired and based on [nvie's original blog post](http://nvie.com/posts/a-successful-git-branching-model/). As he correctly realised, the easiest way to teaching git is using a "big picture" figure:
 
 <a href="https://github.com/eschmar/gitflow/blob/master/gitflow.pdf">
