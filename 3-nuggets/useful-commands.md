@@ -37,4 +37,7 @@ git difftool development..feature/<name>
 
 # list amount of commits per author
 git shortlog -s -n
+
+# remove all merged branches and prune your fork
+git fetch origin && git fetch upstream && git branch --merged | grep -v -e "master" -e "development" | xargs git branch -D && git remote prune origin
 ```
