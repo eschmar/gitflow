@@ -11,7 +11,7 @@ Since there is already comprehensive documentation on Git basics available on th
 * [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 * [Got 15 minutes and want to learn Git?](https://try.github.io)
 
-Please take your time and **ask your peers** in case something is unclear! 
+Please take your time and **ask your peers** in case something is unclear! Once you're somewhat comfortable with git and you're interested to understand better how git works itself, i can recommend this talk: [Deep Dive into Git - Edward Thomson](https://www.youtube.com/watch?v=fBP18-taaNw).
 
 It's advisable to have a printed version of the PDF at hand and trying the commands on a testing repository.
 
