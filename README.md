@@ -29,6 +29,7 @@ It's advisable to have a printed version of the PDF at hand and trying the comma
     * [Clean up](2-big-picture/#clean-up)
 3. [Nuggets](3-nuggets/)
     * [Git reset](3-nuggets/git-reset.md)
+    * [Git log](3-nuggets/git-log.md)
     * [Advanced rebasing](3-nuggets/advanced-rebasing.md)
     * [Checkout Pull Requests](3-nuggets/checkout-pull-request.md)
     * [Reduce local Git folder size](3-nuggets/git-gc.md)

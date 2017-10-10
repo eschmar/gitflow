@@ -11,9 +11,6 @@ Collection of commands, possibly usable in cli aliases:
 git add --patch
 git add -p
 
-# files changed in the last 5 commits
-git log --name-status --pretty=oneline -n 5
-
 # check remote entries
 git remote -v
 
@@ -28,15 +25,8 @@ git remote prune origin
 # merge branches and choose which branch to prioritize
 git merge branch -X ours/theirs
 
-# see the changes of a file, works even 
-# if the file was deleted
-git log -- <file path>
-
 # diff
 git difftool development..feature/<name>
-
-# list amount of commits per author
-git shortlog -s -n
 
 # remove all merged branches and prune your fork
 git fetch origin && git fetch upstream && git branch --merged | grep -v -e "master" -e "development" | xargs git branch -D && git remote prune origin
