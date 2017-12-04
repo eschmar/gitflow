@@ -75,6 +75,7 @@ git push -u origin hotfix/<name>
 
 # create a pull request
 # Pull Request: origin/hotfix/<name> -> upstream/dev
+# Pull Request: origin/hotfix/<name> -> upstream/master
 
 # create a new tag on master
 git checkout master
